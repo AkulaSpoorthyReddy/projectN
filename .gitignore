@@ -1,0 +1,25 @@
+
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Dataset files
+data/raw/
+data/processed/
+
+# Model artifacts
+artifacts/checkpoints/
+artifacts/preprocessing/
+
+# Generated outputs
+outputs/predictions/
+outputs/reports/
+
+# Secrets
+.env

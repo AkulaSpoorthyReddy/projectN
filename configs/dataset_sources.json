@@ -1,0 +1,15 @@
+
+{
+    "UNSW-NB15": {
+        "training": "https://raw.githubusercontent.com/Nir-J/ML-Projects/master/UNSW-Network_Packet_Classification/UNSW_NB15_training-set.csv",
+        "testing": "https://raw.githubusercontent.com/Nir-J/ML-Projects/master/UNSW-Network_Packet_Classification/UNSW_NB15_testing-set.csv"
+    },
+    "NSL-KDD": {
+        "training": "https://raw.githubusercontent.com/defcom17/NSL_KDD/master/KDDTrain%2B.csv",
+        "testing": "https://raw.githubusercontent.com/defcom17/NSL_KDD/master/KDDTest%2B.csv"
+    },
+    "CIC-DDoS2019": {
+        "kaggle_dataset": "dhoogla/cicddos2019",
+        "role": "unseen_evaluation"
+    }
+}

@@ -1,0 +1,45 @@
+﻿{
+    "project_name": "NOVEL-IDS-V2",
+    "datasets": {
+        "training": ["UNSW-NB15", "NSL-KDD"],
+        "unseen_evaluation": ["CIC-DDoS2019"]
+    },
+    "model": {
+        "embedding_dim": 64,
+        "attention_heads": 4,
+        "transformer_layers": 2,
+        "feedforward_dim": 128,
+        "dropout": 0.1,
+        "shared_numeric_features": [
+            "duration",
+            "source_bytes",
+            "destination_bytes"
+        ],
+        "shared_categorical_features": [
+            "protocol",
+            "service"
+        ],
+        "architecture": [
+            "shared_encoder",
+            "dataset_specific_adapters",
+            "adaptive_residual_fusion",
+            "selective_alignment",
+            "transformer_classifier"
+        ],
+        "num_classes": 2,
+        "class_names": ["Normal", "Attack"]
+    },
+    "runtime": {
+        "device": "auto",
+        "batch_size": 256,
+        "num_workers": 0
+    },
+    "paths": {
+        "raw_data": "data/raw",
+        "processed_data": "data/processed",
+        "checkpoints": "artifacts/checkpoints",
+        "preprocessing": "artifacts/preprocessing",
+        "predictions": "outputs/predictions",
+        "reports": "outputs/reports"
+    }
+}
